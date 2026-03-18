@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&P Sanitarios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+    <img src="logo.jpeg" alt="Logo B&P Sanitarios" class="logo">
+  </header>
+
+  <nav id="menu" class="menu">
+    <button onclick="abrirPDF('catalogo-propio.pdf')">Propio</button>
+    <button onclick="abrirPDF('dealer.pdf')">Dealer</button>
+    <button onclick="abrirPDF('bonomini.pdf')">Bonomini</button>
+    <button onclick="abrirPDF('duke.pdf')">Duke</button>
+    <button onclick="abrirPDF('ecoplast.pdf')">Ecoplast</button>
+    <button onclick="abrirPDF('tf3.pdf')">TF3</button>
+    <button onclick="abrirPDF('redeco.pdf')">Redeco</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Catálogo Mayorista 2026</h1>
+      <p>Distribuidora mayorista de repuestos y accesorios sanitarios</p>
+
+      <div class="hero-badges">
+        <span class="badge red">Amplio stock</span>
+        <span class="badge dark">Envíos a domicilio sin cargo</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="ofertas">
+    <div class="section-title">
+      <h2>Ofertas destacadas</h2>
+      <p>Hasta agotar stock</p>
+    </div>
+
+    <div class="ofertas-box">
+      <img src="oferta.jpeg" alt="Oferta destacada" class="oferta-img">
+    </div>
+  </section>
+
+  <div id="visor" class="visor">
+    <div class="visor-top">
+      <span>Catálogo</span>
+      <button class="cerrar" onclick="cerrarPDF()">✖</button>
+    </div>
+    <iframe id="pdfFrame" title="Visor de PDF"></iframe>
+  </div>
+
+  <footer class="footer">
+    <h3>Contacto directo</h3>
+    <a href="https://wa.me/541168136926" target="_blank">📞 Ariel: 1168136926</a>
+    <a href="https://wa.me/541126127218" target="_blank">📞 Daniel: 1126127218</a>
+    <a href="mailto:bpsanitarios@gmail.com">📩 bpsanitarios@gmail.com</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
