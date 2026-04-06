@@ -15,12 +15,14 @@
 
   <nav id="menu" class="menu">
     <button onclick="abrirPDF('catalogo-propio.pdf')">Propio</button>
-    <button onclick="abrirPDF('dealer.pdf')">Dealer</button>
     <button onclick="abrirPDF('bonomini.pdf')">Bonomini</button>
+    <button onclick="abrirPDF('dealer.pdf')">Dealer</button>
     <button onclick="abrirPDF('duke.pdf')">Duke</button>
-    <button onclick="abrirPDF('ecoplast.pdf')">Ecoplast</button>
-    <button onclick="abrirPDF('tf3.pdf')">TF3</button>
+    <button onclick="abrirPDF('egoplast.pdf')">Egoplast</button>
+    <button onclick="abrirPDF('faplas.pdf')">Faplas</button>  
+    <button onclick="abrirPDF('fusiogas.pdf')">Fusiogas</button> 
     <button onclick="abrirPDF('redeco.pdf')">Redeco</button>
+    <button onclick="abrirPDF('tf3.pdf')">TF3</button>
   </nav>
 
   <section class="hero">
@@ -30,25 +32,34 @@
 
       <div class="hero-badges">
         <span class="badge red">Amplio stock</span>
-        <span class="badge dark">Envíos a domicilio sin cargo</span>
+        <span class="badge dark">Envíos a todo Zona Sur</span>
       </div>
     </div>
   </section>
+    
+      <section class="ofertas">
+       <div class="ofertas-box">
+      <img src="marcas.png" alt="Oferta destacada" class="oferta-img">
+    </div>
+  </section>
 
-  <section class="ofertas">
+    
+
+  <!--<section class="ofertas">
     <div class="section-title">
       <h2>Ofertas destacadas</h2>
       <p>Hasta agotar stock</p>
     </div>
 
     <div class="ofertas-box">
-      <img src="oferta.jpeg" alt="Oferta destacada" class="oferta-img">
+      <img src="4.png" alt="Oferta destacada" class="oferta-img">
+      <img src="5.png" alt="Oferta destacada" class="oferta-img">
     </div>
-  </section>
+  </section>-->
 
   <div id="visor" class="visor">
     <div class="visor-top">
-      <span>Catálogo</span>
+      <span>Catálogo B&P</span>
       <button class="cerrar" onclick="cerrarPDF()">✖</button>
     </div>
     <iframe id="pdfFrame" title="Visor de PDF"></iframe>
